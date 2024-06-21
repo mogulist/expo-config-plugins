@@ -3,7 +3,6 @@ module.exports = ({ config }) => {
     ...config,
     plugins: [
       "expo-router",
-      "expo-build-properties",
       [
         "@mj-studio/react-native-naver-map",
         {
