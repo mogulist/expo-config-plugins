@@ -1,4 +1,5 @@
 import { NaverMapView, type Region } from "@mj-studio/react-native-naver-map";
+import React from "react";
 
 export default function map() {
   const jejuRegion: Region = {
@@ -15,8 +16,8 @@ export default function map() {
     <NaverMapView
       style={{ flex: 1 }}
       // showsMyLocationButton={true}
-      onTapMap={(params) => console.warn("onTouch", JSON.stringify(params))}
-      onCameraChanged={(e) => console.warn("onCameraChange", JSON.stringify(e))}
+      onTapMap={(params) => console.log("onTouch", JSON.stringify(params))}
+      onCameraChanged={(e) => console.log("onCameraChange", JSON.stringify(e))}
       initialRegion={{
         latitude: 33.20530773,
         longitude: 126.14656715029,
